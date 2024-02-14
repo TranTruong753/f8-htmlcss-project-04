@@ -60,6 +60,12 @@ button {
     margin: 0 auto;
 }
 
+.header.fixed {
+    position: sticky;
+    top: -18px;
+    z-index: 1;
+}
+
 /* Header */
 
 .header {
