@@ -98,7 +98,11 @@
                 <div class="header__inner">
                     <!-- logo -->
                     <a href="#">
-                        <img src="./assets/img/Logo.svg" alt="lucky" />
+                        <img
+                            loading="lazy"
+                            src="./assets/img/Logo.svg"
+                            alt="lucky"
+                        />
                     </a>
                     <nav class="navbar">
                         <ul class="navbar__list">
@@ -130,6 +134,54 @@
                 </div>
             </div>
         </header>
-        <body style="height: 5000px"></body>
+        <!-- hero -->
+        <!-- Làm phần hero
+section.hero
+	.container
+		.hero__inner
+			.hero__media
+				.hero__img-wrap
+					img.hero__img
+					img.hero__decor .hero__decor-left
+					img.hero__decor .hero__decor-right
+				.hero__img-wrap .hero__img-wrap-small
+					img.hero__img .hero__img-small
+		section.hero__content
+ -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- hero media -->
+                    <div class="hero__media">
+                        <div class="hero__img-wrap">
+                            <img
+                                src="./assets/img/pet-01.png"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <img
+                                src="./assets/img/decor-01.svg"
+                                alt=""
+                                class="hero__decor hero__decor-left"
+                            />
+                            <img
+                                src="./assets/img/decor-02.svg"
+                                alt=""
+                                class="hero__decor hero__decor-right"
+                            />
+                        </div>
+                        <div class="hero__img-wrap hero__img-wrap-small">
+                            <img
+                                src="./assets/img/pet-02.png"
+                                alt=""
+                                class="hero__img hero__img-small"
+                            />
+                        </div>
+                    </div>
+                    <!-- hero content -->
+                    <section class="hero__content"></section>
+                </div>
+            </div>
+        </section>
     </body>
 </html>
