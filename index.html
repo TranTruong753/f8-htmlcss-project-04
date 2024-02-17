@@ -93,6 +93,7 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
     <body>
+        <!-- header -->
         <header class="header fixed">
             <div class="container">
                 <div class="header__inner">
@@ -135,19 +136,6 @@
             </div>
         </header>
         <!-- hero -->
-        <!-- Làm phần hero
-section.hero
-	.container
-		.hero__inner
-			.hero__media
-				.hero__img-wrap
-					img.hero__img
-					img.hero__decor .hero__decor-left
-					img.hero__decor .hero__decor-right
-				.hero__img-wrap .hero__img-wrap-small
-					img.hero__img .hero__img-small
-		section.hero__content
- -->
         <section class="hero">
             <div class="container">
                 <div class="hero__inner">
@@ -174,8 +162,42 @@ section.hero
                             <img
                                 src="./assets/img/pet-02.png"
                                 alt=""
-                                class="hero__img hero__img-small"
+                                class="hero__img"
                             />
+                        </div>
+                        <div class="hero__list">
+                            <!-- item 1 -->
+                            <section class="hero-list__item">
+                                <img
+                                    src="./assets/img/pet-03.png"
+                                    alt=""
+                                    class="hero-list-item__thumb"
+                                />
+                                <div class="hero-list-item__info">
+                                    <p class="hero-list-item__title">
+                                        Pet Health
+                                    </p>
+                                    <div class="hero-list-item__skeleton"></div>
+                                    <div class="hero-list-item__skeleton" style="--width: 39px"></div>
+                                </div>
+                            </section>
+
+                            <div class="hero-list-item__separate"></div>
+                            <!-- item 2 -->
+                            <section class="hero-list__item">
+                                <img
+                                    src="./assets/img/pet-04.png"
+                                    alt=""
+                                    class="hero-list-item__thumb"
+                                />
+                                <div class="hero-list-item__info">
+                                    <p class="hero-list-item__title">
+                                        Pet care
+                                    </p>
+                                    <div class="hero-list-item__skeleton"></div>
+                                    <div class="hero-list-item__skeleton" style="--width: 39px"></div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                     <!-- hero content -->

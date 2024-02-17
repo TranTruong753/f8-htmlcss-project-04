@@ -9,7 +9,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    background: #FFFAF5;
+    background: #fffaf5;
 }
 /* Common */
 a {
@@ -117,7 +117,9 @@ button {
 }
 
 .hero__media {
+    position: relative;
     display: flex;
+    padding-bottom: 94px;
 }
 
 .hero__img-wrap {
@@ -161,4 +163,61 @@ button {
     background: #faa7ad;
     border: 2px solid #f7dddf;
     margin: 0 0 -56px -24px;
+}
+
+.hero__list {
+    position: absolute;
+    bottom: 0px;
+    left: 129px;
+    padding: 18px 14px;
+    background: #ffffff;
+    width: 250px;
+    height: 156px;
+    border-radius: 10px;
+    box-shadow: -17px 14px 68px -4px #cfae8440;
+}
+
+.hero-list__item {
+    display: flex;
+}
+
+.hero-list-item__thumb {
+    background: #fec23f;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.hero-list-item__info {
+    margin-left: 10px;
+}
+
+.hero-list-item__title {
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #181e52;
+}
+
+.hero-list-item__skeleton {
+    margin-top: 7px;
+    width: var(--width, 118px);
+    height: 4px;
+    border-radius: 99px;
+    opacity: 0.08;
+    background: #000958;
+}
+
+.hero-list-item__separate {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background: #f2f2f2;
+    border-radius: 99px;
+}
+
+.hero-list__item:nth-of-type(2) .hero-list-item__thumb {
+    background: #c6e2fa;
 }
