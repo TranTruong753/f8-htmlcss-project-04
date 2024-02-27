@@ -312,13 +312,14 @@ button {
 /* About */
 
 .about {
-    padding: 38.5px 0;  
+    padding: 38.5px 0;
 }
 
 .about__inner {
     padding: 53px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .about__content {
@@ -330,7 +331,7 @@ button {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1;
-    color: #5E6085;
+    color: #5e6085;
 }
 
 .about__heading {
@@ -338,7 +339,7 @@ button {
     width: 446px;
 }
 
-.about__desc {   
+.about__desc {
     width: 431px;
 }
 
@@ -361,12 +362,12 @@ button {
     color: #48496a;
 }
 
-.about__check-item::before { 
+.about__check-item::before {
     content: "";
     display: inline-block;
     width: 24px;
     height: 24px;
-    background: #FF5D31;
+    background: #ff5d31;
     border-radius: 4px;
     box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
 }
@@ -376,5 +377,75 @@ button {
     content: url(../icons/check.svg);
     top: 2px;
     left: 5px;
+}
 
-} 
+/* about__media */
+.about__media {
+   position: relative;
+}
+
+.about__card {
+    position: absolute;
+    top: 157px;
+    left: 0;
+    width: 136px;
+    height: 156px;
+    border-radius: 10px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+    text-align: center;
+    padding: 31px 26px;
+}
+
+.about__card-title {
+    color: #fff;
+    font-family: Sora, sans-serif;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1; /* 100% */
+}
+
+.about__card-desc {
+    margin-top: 14px;
+    color: #c6f4f9;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.43; /* 142.857% */
+}
+
+.about__card-decor {
+    position: absolute;
+    top: -39px;
+    right: -32px;
+    fill: linear-gradient(183deg, #ffa68c 44.03%, #ff926a 124.6%);
+    filter: drop-shadow(5px 9px 24px rgba(255, 158, 126, 0.08));
+}
+
+.about__img-wrap {
+    position: relative;
+    width: 494px;
+    margin-left: auto;
+}
+
+.about__img-wrap::after {
+    position: absolute;
+    inset: auto 0 0 0;
+    content: "";
+    z-index: -1;
+    border-radius: 16px;
+    height: 336px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+}
+
+.about__img {
+    width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.about__media-decor {
+    position: absolute;
+    top: 149px;
+    right: -50px;
+    z-index: -1;
+}
