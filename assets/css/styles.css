@@ -71,7 +71,8 @@ button {
 .header.fixed {
     position: sticky;
     top: -18px;
-    z-index: 1;
+    z-index: 99;
+    background: #fffaf5;
 }
 
 .section-heading {
@@ -601,7 +602,7 @@ button {
 
 /* Service */
 .service {
-    padding: 68px 100px;
+    padding: 68px 0 100px;
     background: #fff6ed;
 }
 
@@ -622,6 +623,7 @@ button {
     margin-top: 70px;
     display: grid;
     grid-template-columns: auto 1fr auto;
+    column-gap: 67px;
 }
 
 .service-item {
@@ -654,7 +656,7 @@ button {
     content: "";
     width: 2px;
     inset: 0 auto 0 0;
-    background: linear-gradient( #FF5B2E 0.39%, #FFA187 100.29%);
+    background: linear-gradient(#ff5b2e 0.39%, #ffa187 100.29%);
 }
 
 .service-item__desc {
@@ -677,4 +679,46 @@ button {
 .service-item__more::after {
     content: url(../icons/arrow-up-right.svg);
     margin: 1px 0 0 6px;
+}
+
+.service__media {
+    position: relative;
+    margin-top: 17px;
+}
+
+.service__media::after {
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    right: 15px;
+    content: "";
+    display: inline-block;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+}
+
+.service__img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.service__cta {
+    min-width: 214px;
+    color: #ff5b2e;
+    border-color: rgb(255, 91, 46, 0.6);
+    transition: 0.2s;
+}
+
+.service__cta-wrap {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+.service__cta:hover {
+    border-color: rgb(255, 91, 46, 1);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.9);
 }
