@@ -274,10 +274,10 @@ button {
     margin-top: 38px;
 }
 
-.btn-primary {
-    color: #ffffff;
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+.btn--primary {
+    color: #ffffff !important;
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
 }
 
 .hero__cta-btn {
@@ -710,6 +710,8 @@ button {
     color: #ff5b2e;
     border-color: rgb(255, 91, 46, 0.6);
     transition: 0.2s;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .service__cta-wrap {
@@ -843,6 +845,8 @@ button {
     min-width: 193px;
     color: #ff5b2e;
     border-color: rgb(255, 91, 46, 0.6);
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .staff__cta:hover {
@@ -853,7 +857,11 @@ button {
 /* Pricing */
 .pricing {
     padding: 86px 0;
-    background:#FFF6ED;
+    background: #fff6ed;
+}
+
+.pricing__container {
+    width: 994px;
 }
 
 .pricing__heading,
@@ -906,9 +914,12 @@ button {
     right: 0;
 }
 
-.pricing__switch-input:not(:checked) + .pricing__switch-label .pricing__switch-value:nth-of-type(2),
-.pricing__switch-input:checked + .pricing__switch-label .pricing__switch-value:nth-of-type(1)
-{
+.pricing__switch-input:not(:checked)
+    + .pricing__switch-label
+    .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked
+    + .pricing__switch-label
+    .pricing__switch-value:nth-of-type(1) {
     color: #ff5b2e;
 }
 
@@ -926,3 +937,75 @@ button {
     top: -10px;
     right: -113px;
 }
+
+.pricing__list {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+}
+
+.pricing-item {
+    background: #FFF;
+    border-radius: 20px;
+    padding: 30px 28px 43px; 
+}
+
+.pricing-item__type {
+    color: #ff5b2e;
+    font-size: 1.2rem;
+    line-height: 1; /* 100% */
+}
+
+.pricing-item__heading {
+    margin-top: 8px;
+    color: #3f4065;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.pricing-item__price {
+    margin-top: 24px;
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 3.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.03; /* 103.03% */
+}
+
+.pricing-item__btn {
+    --height: 44px;
+    margin-top: 22px;
+    min-width: 246px;
+    background: #fff;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    color: #ff5b2e;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.pricing-item__btn:hover {
+    border-color: rgb(255, 91, 46, 1);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.9);
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+
+.pricing-item__item {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1; /* 100% */
+}
+
+.pricing-item__item::before {
+    content: url(../icons/price-check.svg);
+    margin-right: 12px;
+}
+
